@@ -16,13 +16,54 @@
 		<meta name="locality" content="Madrid, España">
 		<meta name="rating" content="general">
 		<meta name="robots" content="index, nofollow">
+		<!--He metido aqui el style para pasartelo, luego sino quitalo y metelo en el
+		css. Lo he puesto asi un poco por encima..-->
+		<style>
+			.topnav {
+				overflow: hidden;
+				background-color:  	#4682B4;
+				heigth: 80px;
+			}
+			.topnav a {
+				float: left;
+				display: block;
+				color: #f2f2f2;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			.topnav a:hover {
+				background-color:#AFEEEE;
+				color: black;
+			}
+			.topnav form {
+				float:right;
+				display: block;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				color: #f2f2f2;
+			}
+		</style>
 	</head>
 	<body>
 		
 		<header>
-			
+			<h3>INSTRUMENTS</h3>
 		</header>
 		
+		<div class="topnav">
+			<a href="#">Link</a>
+			<a href="#">Cuerda</a>
+			<a href="#">Viento</a>
+			<a href="#">Percusión</a>
+			<form action="buscador.php" autocomplete="on">
+				<label for="buscador">Buscador</label>
+				<input type="search" id="buscador" autofocus/>
+				<input type="submit" value="Buscar"/>
+			</form>	
+		</div>
+
 		<section>
 		
 		</section>
