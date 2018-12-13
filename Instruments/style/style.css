@@ -1,0 +1,37 @@
+@font-face
+{
+	src:url();
+	font-face:MyFont;
+}
+
+@media screen only and (min-width: 1200px)
+{
+	header
+	{
+		position:fixed;
+		height:200px;
+		width:100%;
+	}
+	
+	nav
+	{
+		overflow:hidden;
+		position:fixed;
+	}
+	
+	nav a, nav .DropDown
+	{
+		float:left;
+	}
+	
+	nav .DDContent
+	{
+		min-width:150px;
+		display:none;
+	}
+	
+	nav .DropButton:hover .DDContent
+	{
+		display:block;
+	}
+}
