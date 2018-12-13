@@ -3,66 +3,62 @@
 	<head>
 		<title>Instruments</title>
 		<meta charset = "UTF-8">
+		<meta name="rating" content="general">
+		<meta name="distribution" content="global">
+		<meta name="author" content="Victor y Cris"/>
+		<meta name="robots" content="index, nofollow">
+		<meta name="locality" content="Madrid, España">
+		<meta name="generator" content="Sublime Text"/>
+		<meta name="copyrigth" content="Instruments SL"/>
+		<meta name="description" content="Instrumentos"/> 
+		<meta name="date" content="12 de diciembre de 2018">
+		<meta name="application-name" content="Instruments"/>
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<meta name="viewport" content="width=devide-width,initial-scale=1.0">
-		<meta name="author" content="Victor y Cris"/>
-		<meta name="application-name" content="Instruments"/>
-		<meta name="description" content="Instrumentos"/> 
-		<meta name="generator" content="Sublime Text"/>
 		<meta name="keywords" content="instrumentos, cuerda, viento, percusion"/>
-		<meta name="copyrigth" content="Instruments SL"/>
-		<meta name="date" content="12 de diciembre de 2018">
-		<meta name="distribution" content="global">
-		<meta name="locality" content="Madrid, España">
-		<meta name="rating" content="general">
-		<meta name="robots" content="index, nofollow">
-		<!--He metido aqui el style para pasartelo, luego sino quitalo y metelo en el
-		css. Lo he puesto asi un poco por encima..-->
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<style>
-			.topnav {
-				overflow: hidden;
-				background-color:  	#4682B4;
-				heigth: 80px;
-			}
-			.topnav a {
-				float: left;
-				display: block;
-				color: #f2f2f2;
-				text-align: center;
-				padding: 14px 16px;
-				text-decoration: none;
-			}
-			.topnav a:hover {
-				background-color:#AFEEEE;
-				color: black;
-			}
-			.topnav form {
-				float:right;
-				display: block;
-				text-align: center;
-				padding: 14px 16px;
-				text-decoration: none;
-				color: #f2f2f2;
-			}
 		</style>
 	</head>
 	<body>
-		
 		<header>
-			<h3>INSTRUMENTS</h3>
+			<h1>INSTRUMENTS</h1>
 		</header>
-		
-		<div class="topnav">
-			<a href="#">Link</a>
-			<a href="#">Cuerda</a>
-			<a href="#">Viento</a>
-			<a href="#">Percusión</a>
-			<form action="buscador.php" autocomplete="on">
-				<label for="buscador">Buscador</label>
-				<input type="search" id="buscador" autofocus/>
-				<input type="submit" value="Buscar"/>
+		<nav>
+			<a href="#">Introduction</a>
+			<div class="DropDown">
+				<button class="DropButton">Wind
+					<i class="fa fa-caret-down"></i>
+					<i class="fa fa-caret-up"></i>
+				</button>
+				<div class="DDContent">
+					<a href="#">test</a>
+				</div>
+			</div>
+			<div class="DropDown">
+				<button class="DropButton">String
+					<i class="fa fa-caret-down"></i>
+					<i class="fa fa-caret-up"></i>
+				</button>
+				<div class="DDContent">
+					<a href="#">test</a>
+				</div>
+			</div>
+			<div class="DropDown">
+				<button class="DropButton">Percussion
+					<i class="fa fa-caret-down"></i>
+					<i class="fa fa-caret-up"></i>
+				</button>
+				<div class="DDContent">
+					<a href="#">test</a>
+				</div>
+			</div>
+			<form action="" method="post" autocomplete="on">
+				<label for="Searcher">Searcher</label>
+				<input type="search" id="Searcher" autofocus>
+				<input type="submit" value="Search">
 			</form>	
-		</div>
+		</nav>
 
 		<section>
 		

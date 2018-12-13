@@ -4,34 +4,113 @@
 	font-face:MyFont;
 }
 
-@media screen only and (min-width: 1200px)
+@media only screen and (min-width: 768px)
 {
+	body
+	{
+		background-color:#0A0A2A;
+	}
+	
 	header
 	{
-		position:fixed;
 		height:200px;
 		width:100%;
 	}
 	
 	nav
 	{
-		overflow:hidden;
-		position:fixed;
+		background-color:#0B0B61;
+		font-family:MEFont;
+		overflow: hidden;
+	}
+
+	nav a
+	{
+		text-decoration: none;
+		padding: 14px 16px;
+		font-size:16px;
+		color:#FFFFFF;
+		float: left;
+	}
+
+	nav a:hover
+	{
+		background-color:#58FAF4;
 	}
 	
-	nav a, nav .DropDown
+	nav form
 	{
+		padding: 12px 16px;
+		float:right;
+	}
+
+	.DropDown
+	{
+		overflow:hidden;
 		float:left;
 	}
-	
-	nav .DDContent
+
+	.DDContent
 	{
-		min-width:150px;
+		box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+		background-color:#151515;
+		position:absolute;
+		min-width:160px;
+		display:none;
+		z-index:1;
+	}
+
+	.DDContent a 
+	{
+		text-decoration:none;
+		padding:12px 16px;
+		font-size:12px;
+		display:block;
+		color:#0080FF;
+		float:none;
+	}
+
+	.DDContent a:hover 
+	{
+		background-color:#151515;
+		color:#FFFFFF;
+	}
+
+	.DropButton 
+	{
+		background-color:inherit;
+		font-family:inherit;
+		padding:14px 16px;
+		font-size:16px;
+		cursor:pointer;  
+		color:#FFFFFF;
+		outline:none;
+		border:none;
+		margin:0;
+	}
+
+	.DropDown:hover .DropButton
+	{
+		background-color:#58FAF4;
+	}
+	
+	.DropDown:hover .DDContent
+	{
+		display:block;
+	}
+	
+	.DropDown:hover .fa-caret-down
+	{
 		display:none;
 	}
 	
-	nav .DropButton:hover .DDContent
+	.DropDown:hover .fa-caret-up
 	{
-		display:block;
+		display:inline-block;
+	}
+
+	.DropDown .fa-caret-up
+	{
+		display:none;
 	}
 }
