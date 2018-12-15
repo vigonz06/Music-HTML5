@@ -4,6 +4,7 @@
 		<title>Instruments</title>
 		<meta charset = "UTF-8">
 		<meta name="rating" content="general">
+		<script src="script/script.js"></script>
 		<meta name="distribution" content="global">
 		<meta name="author" content="Victor y Cris"/>
 		<meta name="robots" content="index, nofollow">
@@ -17,48 +18,58 @@
 		<meta name="viewport" content="width=devide-width,initial-scale=1.0">
 		<meta name="keywords" content="instrumentos, cuerda, viento, percusion"/>
 		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
 		<style>
 		</style>
 	</head>
 	<body>
 		<header>
-			<h1>INSTRUMENTS</h1>
+			<time class="H">
+				<script>document.write(new Date().toLocaleDateString());</script>
+			</time>
+			<div class="H title">
+				<div>(</div>
+				<div>I</div>
+				<i class="fa fa-play-circle"></i>
+				<div>)</div>
+				<div>Instruments</div>
+				<i class="fa fa-play-circle"></i>
+			</div>
 		</header>
 		<nav>
-			<a href="#">Introduction</a>
+			<a class="active" href="#">Introduction</a>
 			<div class="DropDown">
-				<button class="DropButton">Wind
-					<i class="fa fa-caret-down"></i>
-					<i class="fa fa-caret-up"></i>
+				<button onclick="Display(0)" id="WDB" class="DropButton">Wind
+					<i id="WCD" class="fa fa-caret-down"></i>
+					<i id="WCU" class="fa fa-caret-up"></i>
 				</button>
-				<div class="DDContent">
+				<div id="WDD" class="DDContent">
 					<a href="#">Wood</a>
 					<a href="#">Metal</a>
 				</div>
 			</div>
 			<div class="DropDown">
-				<button class="DropButton">String
-					<i class="fa fa-caret-down"></i>
-					<i class="fa fa-caret-up"></i>
+				<button onclick="Display(1)" id="SDB" class="DropButton">String
+					<i id="SCD" class="fa fa-caret-down"></i>
+					<i id="SCU" class="fa fa-caret-up"></i>
 				</button>
-				<div class="DDContent">
+				<div id="SDD" class="DDContent">
 					<a href="#">Rubbed</a>
 					<a href="#">Plucked</a>
 					<a href="#">Percussed</a>
 				</div>
 			</div>
 			<div class="DropDown">
-				<button class="DropButton">Percussion
-					<i class="fa fa-caret-down"></i>
-					<i class="fa fa-caret-up"></i>
+				<button onclick="Display(2)" id="PDB" class="DropButton">Percussion
+					<i id="PCD" class="fa fa-caret-down"></i>
+					<i id="PCU" class="fa fa-caret-up"></i>
 				</button>
-				<div class="DDContent">
+				<div id="PDD" class="DDContent">
 					<a href="#">Tuned</a>
-					<a href="#">Not tuned</a>
+					<a href="#">Not Tuned</a>
 				</div>
 			</div>
 			<form action="" method="post" autocomplete="on">
-				<label for="Searcher">Searcher</label>
 				<input type="search" id="Searcher" autofocus>
 				<input type="submit" value="Search">
 			</form>	

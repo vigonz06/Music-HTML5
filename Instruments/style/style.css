@@ -4,17 +4,49 @@
 	font-face:MyFont;
 }
 
+:root
+{
+	--main-bg-color:#D2B48C;;
+}
+
 @media only screen and (min-width: 768px)
 {
 	body
 	{
-		background-color: #D2B48C;
+		background-color:var(--main-bg-color);
 	}
 	
 	header
 	{
-		height:200px;
+		height:150px;
 		width:100%;
+	}
+	
+	time
+	{
+		text-align:right;
+		height:150px;
+		width:15%;
+	}
+	
+	.title
+	{
+		height:150px;
+		width:50%;
+	}
+	
+	.title .fa-play, .title div
+	{
+		font-family:"Times New Roman";
+		display:inline-block;
+		font-style:italic;
+		font-weight:bold;
+		font-size:100px;	
+	}
+	
+	.H
+	{
+		float:right;
 	}
 	
 	nav
@@ -32,11 +64,6 @@
 		color:#000000;
 		float: left;
 	}
-
-	nav a:hover
-	{
-		background-color:#888888;
-	}
 	
 	nav form
 	{
@@ -52,28 +79,31 @@
 
 	.DDContent
 	{
-		
-		background-color:#B0C4DE;
+		border-color:var(--main-bg-color);
+		background-color:#5F9EA0;
+		box-sizing:border-box;
+		border-width:0 8px;
+		border-style:solid;
 		position:absolute;
-		min-width:160px;
 		display:none;
+		width:100%;
 		z-index:1;
+		left:0;
 	}
 
 	.DDContent a 
 	{
 		text-decoration:none;
+		display:inline-block;
 		padding:12px 16px;
 		font-size:16px;
-		display:block;
-		color:#0080FF;
 		float:none;
 	}
 
-	.DDContent a:hover 
+	.DDContent a:hover, .DropDown:hover 
+	.DropButton, nav a:hover, nav .clicked
 	{
 		background-color:#888888;
-		color:#FFFFFF;
 	}
 
 	.DropButton 
@@ -87,25 +117,10 @@
 		border:none;
 		margin:0;
 	}
-
-	.DropDown:hover .DropButton
-	{
-		background-color:#888888;
-	}
 	
-	.DropDown:hover .DDContent
+	.show
 	{
 		display:block;
-	}
-	
-	.DropDown:hover .fa-caret-down
-	{
-		display:none;
-	}
-	
-	.DropDown:hover .fa-caret-up
-	{
-		display:inline-block;
 	}
 
 	.DropDown .fa-caret-up
