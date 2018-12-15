@@ -63,6 +63,7 @@
 		padding: 14px 16px;
 		font-size:16px;
 		color:#000000;
+		transition:2s;
 		float: left;
 	}
 	
@@ -91,6 +92,7 @@
 		border-width:0 8px;
 		border-style:solid;
 		position:absolute;
+		transition:2s;
 		display:none;
 		width:100%;
 		z-index:1;
@@ -103,6 +105,7 @@
 		display:inline-block;
 		padding:12px 16px;
 		font-size:16px;
+		transition:2s;
 		float:none;
 	}
 
@@ -118,7 +121,8 @@
 		font-family:inherit;
 		padding:14px 16px;
 		font-size:16px;
-		cursor:pointer;  
+		cursor:pointer; 
+		transition:2s; 
 		outline:none;
 		border:none;
 		margin:0;
@@ -151,6 +155,7 @@
 	{
 		text-decoration:none;
 		padding:12px 20px;
+		transition:2s;
 		display:block;
 	}
 	
