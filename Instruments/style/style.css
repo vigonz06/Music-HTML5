@@ -138,9 +138,20 @@
 		display:none;
 	}
 	
+	.show
+	{
+		display:block;
+	}
+	
+	main
+	{
+		position:relative;
+	}
+	
 	.sidenav
 	{
 		background-color:#AAAAAA;
+		position:absolute;
 		height:760px;
 		float:left;
 		width:15%;
@@ -162,5 +173,26 @@
 	.sidenav a:hover
 	{
 		background-color:#EEEEEE;
+	}
+	
+	.content
+	{
+		box-sizing:border-box;
+		position:absolute;
+		padding:16px;
+		width:85%;
+		right:0;
+	}
+	
+	.content p
+	{
+		position:absolute;
+	}
+	
+	.title
+	{
+		font-weight:bold;
+		font-size:25px;
+		left:750px;
 	}
 }
