@@ -112,4 +112,9 @@
 	{
 		display:none;
 	}
+	
+	.active
+	{
+		background-color:#AAAAAA;
+	}
 }
