@@ -1,56 +1,63 @@
-var Ids = [
-{ButtonId:"WDB", DropId:"WDD", CaretUpId:"WCU", CaretDownId:"WCD"}, 
-{ButtonId:"SDB", DropId:"SDD", CaretUpId:"SCU", CaretDownId:"SCD"}, 
-{ButtonId:"PDB", DropId:"PDD", CaretUpId:"PCU", CaretDownId:"PCD"}
+var Ids = 
+[
+[
+{ButtonId:"IDB", DropId:"IDD"},
+{ButtonId:"WDB", DropId:"WDD"},
+{ButtonId:"SDB", DropId:"SDD"},
+{ButtonId:"PDB", DropId:"PDD"}
+],
+[
+{ButtonId:"WDB0", DropId:"WDDC0"},
+{ButtonId:"WDB1", DropId:"WDDC1"}
+],
+[
+{ButtonId:"SDB0", DropId:"SDDC0"},
+{ButtonId:"SDB1", DropId:"SDDC1"},
+{ButtonId:"SDB2", DropId:"SDDC2"}
+],
+[
+{ButtonId:"PDB0", DropId:"PDDC0"},
+{ButtonId:"PDB1", DropId:"PDDC1"}
 ]
+];
 
-function Display(i)
-{
-	
-	if(document.getElementById(Ids[i].DropId).classList.contains('show'))
+function Display(i, j)
+{	
+	if(!document.getElementById(Ids[i][j].DropId).classList.contains('show'))
 	{
-		document.getElementById(Ids[i].ButtonId).className = 
-		document.getElementById(Ids[i].ButtonId).className.substr(0, 
-		document.getElementById(Ids[i].ButtonId).className.length - 8);
-		document.getElementById(Ids[i].DropId).classList.remove('show');
-		document.getElementById(Ids[i].CaretUpId).style.display = 'none';
-		document.getElementById(Ids[i].CaretDownId).style.display = 'inline-block';
-	}
-	else
-	{		
-		for(var k in Ids)
+		var k, l;
+		
+		for(k = (i == 0) ? 0 : 1; k < Ids.length; k++)
 		{
-			if(document.getElementById(Ids[k].DropId).classList.contains('show'))
+			for(l in Ids[k])
 			{
-				document.getElementById(Ids[k].ButtonId).className = 
-				document.getElementById(Ids[k].ButtonId).className.substr(0, 
-				document.getElementById(Ids[k].ButtonId).className.length - 8);
-				document.getElementById(Ids[k].DropId).classList.remove('show');
-				document.getElementById(Ids[k].CaretUpId).style.display = 'none';
-				document.getElementById(Ids[k].CaretDownId).style.display = 'inline-block';
+				if(document.getElementById(Ids[k][l].DropId).classList.contains('show'))
+				{
+					document.getElementById(Ids[k][l].DropId).classList.toggle('show');
+					document.getElementById(Ids[k][l].ButtonId).classList.toggle('clicked');
+				}
 			}
 		}
-		document.getElementById(Ids[i].DropId).classList.add('show');
-		document.getElementById(Ids[i].ButtonId).className += " clicked";
-		document.getElementById(Ids[i].CaretDownId).style.display = 'none';
-		document.getElementById(Ids[i].CaretUpId).style.display = 'inline-block';
 	}
+	document.getElementById(Ids[i][j].DropId).classList.toggle('show');
+	document.getElementById(Ids[i][j].ButtonId).classList.toggle('clicked');
 }
 
 window.onclick = function(event)
 {	
 	if(!event.target.matches('.SNButton') && !event.target.matches('.DropButton'))
-	{	
-		for(var i in Ids)
+	{
+		var i, j;
+	
+		for(i in Ids)
 		{
-			if(document.getElementById(Ids[i].DropId).classList.contains('show'))
+			for(j in Ids[i])
 			{
-				document.getElementById(Ids[i].ButtonId).className = 
-				document.getElementById(Ids[i].ButtonId).className.substr(0, 
-				document.getElementById(Ids[i].ButtonId).className.length - 8);
-				document.getElementById(Ids[i].DropId).classList.remove('show');
-				document.getElementById(Ids[i].CaretUpId).style.display = 'none';
-				document.getElementById(Ids[i].CaretDownId).style.display = 'inline-block';
+				if(document.getElementById(Ids[i][j].DropId).classList.contains('show'))
+				{
+					document.getElementById(Ids[i][j].DropId).classList.toggle('show');
+					document.getElementById(Ids[i][j].ButtonId).classList.toggle('clicked');
+				}
 			}
 		}
 	}
