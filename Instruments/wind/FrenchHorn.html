@@ -38,36 +38,117 @@
 			</div>
 		</header>
 		<nav>
-			<a href="../Index.html">Introduction</a>
-			<div class="DropDown">
-				<button onclick="Display(0)" id="WDB" class="DropButton active">Wind
-					<i id="WCD" class="fa fa-caret-down"></i>
-					<i id="WCU" class="fa fa-caret-up"></i>
+			<div class="SN">
+				<button onclick="Display(0,0)" id="IDB" class="SNButton">Introduction
+					<i class="fa fa-caret-down"></i>
+					<i class="fa fa-caret-up"></i>
 				</button>
-				<div id="WDD" class="DDContent">
-					<a href="../wind/Transverse.html">Wood</a>
-					<a href="../wind/Trumpet.html" class="active">Metal</a>
+				<div id="IDD" class="SNContent">
+					<a href="../Index.html">About Us</a>
+					<a href="../main/Blog.html">Our Blog</a>
+					<a href="../main/Sell.html">Sell Your Instrument</a>
 				</div>
 			</div>
-			<div class="DropDown">
-				<button onclick="Display(1)" id="SDB" class="DropButton">String
-					<i id="SCD" class="fa fa-caret-down"></i>
-					<i id="SCU" class="fa fa-caret-up"></i>
+			<div class="SN">
+				<button onclick="Display(0,1)" id="WDB" class="SNButton active">Wind
+					<i class="fa fa-caret-down"></i>
+					<i class="fa fa-caret-up"></i>
 				</button>
-				<div id="SDD" class="DDContent">
-					<a href="../string/Violin.html">Rubbed</a>
-					<a href="../string/Guitar.html">Plucked</a>
-					<a href="../string/Piano.html">Percussed</a>
+				<div id="WDD" class="SNContent">
+					<div class="DropDown">
+						<button onclick="Display(1,0)" id="WDB0" class="DropButton">Wood
+							<i class="fa fa-caret-down"></i>
+							<i class="fa fa-caret-up"></i>
+						</button>
+						<div id="WDDC0" class="DDContent">
+							<a href="../wind/Oboe.html">Oboe</a>
+							<a href="../wind/Clarinet.html">Clarinet</a>
+							<a href="../wind/Bassoon.html">Bassoon</a>
+							<a href="../wind/Saxophone.html">Saxophone</a>
+							<a href="../wind/Transverse.html">Transverse Flaute</a>
+						</div>
+					</div>
+					<div class="DropDown">
+						<button onclick="Display(1,1)" id="WDB1" class="DropButton active">Metal
+							<i class="fa fa-caret-down"></i>
+							<i class="fa fa-caret-up"></i>
+						</button>
+						<div id="WDDC1" class="DDContent">
+							<a href="../wind/Tuba.html">Tuba</a>
+							<a href="../wind/Trumpet.html">Trumpet</a>
+							<a href="../wind/Trombone.html">Trombone</a>
+							<a href="../wind/FrenchHorn.html" class="active">French Horn</a>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="DropDown">
-				<button onclick="Display(2)" id="PDB" class="DropButton">Percussion
-					<i id="PCD" class="fa fa-caret-down"></i>
-					<i id="PCU" class="fa fa-caret-up"></i>
+			<div class="SN">
+				<button onclick="Display(0,2)" id="SDB" class="SNButton">String
+					<i class="fa fa-caret-down"></i>
+					<i class="fa fa-caret-up"></i>
 				</button>
-				<div id="PDD" class="DDContent">
-					<a href="../percussion/Carillon.html">Tuned</a>
-					<a href="../Percussion/BassDrum.html">Not Tuned</a>
+				<div id="SDD" class="SNContent">
+					<div class="DropDown">
+						<button onclick="Display(2,0)" id="SDB0" class="DropButton">Rubbed
+							<i class="fa fa-caret-down"></i>
+							<i class="fa fa-caret-up"></i>
+						</button>
+						<div id="SDDC0" class="DDContent">
+							<a href="../string/Cello.html">Cello</a>
+							<a href="../string/Viola.html">Viola</a>
+							<a href="../string/Violin.html">Violin</a>
+							<a href="../string/DoubleBass.html">Double Bass</a>
+						</div>
+					</div>
+					<div class="DropDown">
+						<button onclick="Display(2,1)" id="SDB1" class="DropButton">Plucked
+							<i class="fa fa-caret-down"></i>
+							<i class="fa fa-caret-up"></i>
+						</button>
+						<div id="SDDC1" class="DDContent">
+							<a href="../string/Guitar.html">Guitar</a>
+						</div>
+					</div> 
+					<div class="DropDown">
+						<button onclick="Display(2,2)" id="SDB2" class="DropButton">Percussed
+							<i class="fa fa-caret-down"></i>
+							<i class="fa fa-caret-up"></i>
+						</button>
+						<div id="SDDC2" class="DDContent">
+							<a href="../string/Piano.html">Piano</a>
+						</div>
+					</div> 
+				</div>
+			</div>
+			<div class="SN">
+				<button onclick="Display(0,3)" id="PDB" class="SNButton">Percussion
+					<i class="fa fa-caret-down"></i>
+					<i class="fa fa-caret-up"></i>
+				</button>
+				<div id="PDD" class="SNContent">
+					<div class="DropDown">
+						<button onclick="Display(3,0)" id="PDB0" class="DropButton">Tunned
+							<i class="fa fa-caret-down"></i>
+							<i class="fa fa-caret-up"></i>
+						</button>
+						<div id="PDDC0" class="DDContent">
+							<a href="../percussion/Carillon.html">Carillon</a>
+							<a href="../percussion/Xilophone.html">Xilophone</a>
+							<a href="../percussion/Vibraphone.html">Vibraphone</a>
+							<a href="../percussion/SmallDrum.html">Small Drum</a>
+						</div>
+					</div>
+					<div class="DropDown">
+						<button onclick="Display(3,1)" id="PDB1" class="DropButton">Not Tunned
+							<i class="fa fa-caret-down"></i>
+							<i class="fa fa-caret-up"></i>
+						</button>
+						<div id="PDDC1" class="DDContent">
+							<a href="../percussion/Box.html">Box</a>
+							<a href="../percussion/Plates.html">Plates</a>
+							<a href="../percussion/BassDrum.html">Bass Drum</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<form action="" method="post" autocomplete="on">
@@ -77,13 +158,6 @@
 			<i class="fa fa-search"></i>
 		</nav>
 		<main>
-			<div class="sidenav">
-				<h4>Wind-Metal</h4>
-				<a href="Trumpet.html">Trumpet</a>
-				<a href="FrenchHorn.html" class="active">French Horn</a>
-				<a href="Trombone.html">Trombone</a>
-				<a href="Tuba.html">Tuba</a>
-			</div>
 			<div class="content">
 				<p class="title">French Horn</p>
 			</div>

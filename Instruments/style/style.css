@@ -56,6 +56,16 @@
 		float:right;
 	}
 	
+	p
+	{
+		text-align:justify;
+	}
+	
+	main
+	{
+		padding:1% 20%;
+	}
+	
 	nav
 	{
 		background-color:#B0C4DE;
