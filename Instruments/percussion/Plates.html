@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<meta name="rating" content="general">
+		<script src="../script/script.js"></script>
+		<meta name="distribution" content="global">
+		<meta name="author" content="Victor & Cris"/>
+		<meta name="robots" content="index, nofollow">
+		<meta name="locality" content="Madrid, España">
+		<meta name="generator" content="Sublime Text"/>
+		<meta name="copyrigth" content="Instruments SL"/>
+		<meta name="description" content="Instrumentos"/> 
+		<meta name="date" content="12 de diciembre de 2018">
+		<meta name="application-name" content="Instruments"/>
+		<title>Instruments | Not Tunned Percussion | Plates</title>
+		<link rel="icon" href="../icon/icon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="../style/style.css">
+		<meta name="viewport" content="width=devide-width,initial-scale=1.0">
+		<meta name="keywords" content="instrumentos, cuerda, viento, percusion"/>
+		<link rel="stylesheet" href ="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+		<style>
+		</style>
+	</head>
+	<body>
+		<header>
+			<time class="H">
+				<script>document.write(new Date().toLocaleDateString());</script>
+			</time>
+			<div class="H title">
+				<div>(</div>
+				<div>I</div>
+				<i class="fa fa-play-circle"></i>
+				<div>)</div>
+				<div>Instruments</div>
+				<i class="fa fa-play-circle"></i>
+			</div>
+		</header>
+		<nav>
+			<a href="../Index.html">Introduction</a>
+			<div class="DropDown">
+				<button onclick="Display(0)" id="WDB" class="DropButton">Wind
+					<i id="WCD" class="fa fa-caret-down"></i>
+					<i id="WCU" class="fa fa-caret-up"></i>
+				</button>
+				<div id="WDD" class="DDContent">
+					<a href="../wind/Transverse.html">Wood</a>
+					<a href="../wind/Trumpet.html">Metal</a>
+				</div>
+			</div>
+			<div class="DropDown">
+				<button onclick="Display(1)" id="SDB" class="DropButton">String
+					<i id="SCD" class="fa fa-caret-down"></i>
+					<i id="SCU" class="fa fa-caret-up"></i>
+				</button>
+				<div id="SDD" class="DDContent">
+					<a href="../string/Violin.html">Rubbed</a>
+					<a href="../string/Guitar.html">Plucked</a>
+					<a href="../string/Piano.html">Percussed</a>
+				</div>
+			</div>
+			<div class="DropDown">
+				<button onclick="Display(2)" id="PDB" class="DropButton active">Percussion
+					<i id="PCD" class="fa fa-caret-down"></i>
+					<i id="PCU" class="fa fa-caret-up"></i>
+				</button>
+				<div id="PDD" class="DDContent">
+					<a href="../percussion/Carillon.html">Tuned</a>
+					<a href="../percussion/BassDrum.html" class="active">Not Tuned</a>
+				</div>
+			</div>
+			<form action="" method="post" autocomplete="on">
+				<input type="search" id="Searcher" autofocus>
+				<input type="submit" value="Search">
+			</form>	
+			<i class="fa fa-search"></i>
+		</nav>
+		<main>
+			<div class="sidenav">
+				<h4>Tunned Percussion</h4>
+				<a href="BassDrum.html">Bass Drum</a>
+				<a href="Box.html">Box</a>
+				<a href="Plates.html" class="active">Plates</a>
+			</div>
+			<div class="content">
+				<p class="title">Small Drum</p>
+			</div>
+		</main>
+	</body>
+</html>
